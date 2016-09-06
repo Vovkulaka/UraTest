@@ -1,0 +1,165 @@
+﻿a {
+    color: red;
+    text-decoration: none;
+}
+.homePpageTextStyle {
+    color: #B5B5B5;
+}
+.kursor {
+    cursor: pointer;
+}
+.footerMenu{
+    color: #B5B5B5;  
+}
+.FoatL {
+    float: left;
+}
+.footerMargin {
+    width: 270px;
+    margin: 0px auto;
+}
+
+.buttonThem {
+    height: 26px;
+    width: 26px;
+    border-radius: 13px;
+    margin: 10px;
+}
+.bacicBgThem {
+    background-color: red;
+}
+.bacicCoThem {
+    color: red !important;
+}
+.ThemBgRed {
+    background-color: red;
+}
+.ThemBgGreen {
+    background-color: green;
+}
+.ThemBgBlue {
+    background-color: blue;
+}
+.ThemCoRed {
+    color: red !important;
+}
+.ThemCoGreen {
+    color: green !important;
+}
+.ThemCoBlue {
+    color: blue !important;
+}
+
+.headerStyle {
+    height: 90px;
+}
+.them {
+    padding-top: 28px;
+}
+.siteLogo {
+    font-size: 25px;
+}
+.siteLogoPosition {
+    padding-top: 29px;
+}
+.headSlogan {
+    margin-top: -36px;
+    color: #8F8F8F;
+    font-size: 11px;
+    word-spacing:4px;
+	letter-spacing:2px;
+
+}
+.headAdding {
+    padding-top: 40px;
+}
+.headFindMap {
+    padding-top: 40px;
+}
+.head_a {
+    color: #8F8F8F;
+    border-bottom:1px dotted #8F8F8F;
+}
+.glyphicon-plus {
+    font-size: 12px;
+}
+
+#parentDark { 
+	background: rgba(0,0,0,0.25);
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	top: 0;
+	left: 0;
+}
+.menu-position {
+	background-color: rgba(255,255,255,1);
+    height: 100vh; 
+    width: 300px;
+    position: fixed;
+	top: 0px;
+	right: 0%;
+	opacity: 1;
+}
+.ulPosition {
+    padding-right: 15px;
+}
+.zakrytyMenu {
+    padding: 10px;
+}
+.disp-none {
+	display: none;
+}
+.menu {
+	z-index: 1100;
+}
+.menuMargin {
+    margin-top: 40px;
+}
+
+.padd-marg {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.homeFon {
+    height: 300px;
+    width: 100vw; 
+    margin-top: 20px;
+}
+.dbPosition {
+    margin-top: -180px;
+}
+.poshuk {
+    background-color: white;
+    margin: 0px auto 70px auto;
+    max-width: 350px;
+}
+.tablycja {
+    background-color: white;
+}
+
+.textDownload-1 {
+    margin-top: 0px  !important;
+}
+.textDownload-2 {
+    color: white;
+    border-radius: 10px;
+}
+.textDownloadPadd {
+    padding: 6px;
+}
+.googleplay {
+    margin-top: -10px;
+ }
+.telBlok {
+    margin: 50px -100px auto auto;
+}
+.poshuk {}
+.tablycja{}
+
+.footerMenuKrapka {
+    margin-top: -25px; 
+    color: #B5B5B5;
+    font-size: 35px;
+}

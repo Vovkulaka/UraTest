@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/RCSS.css")
+    @Styles.Render("~/Content/SiteStyle.css")
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/css")
+    
+
+</head>
+<body>
+    <div class="row headerStyle"> 
+        <div class="col-lg-1"></div>    
+        <div class="col-lg-2 them">
+            <div id="redThem" class="buttonThem ThemBgRed kursor FoatL"></div>
+            <div id="grinThem" class="buttonThem ThemBgGreen kursor FoatL"></div>
+            <div id="blueThem" class="buttonThem ThemBgBlue kursor FoatL"></div>
+        </div>
+        <div class="col-lg-2">
+            <p id="siteLogo" class="siteLogoPosition">@Html.ActionLink("Site Logo", "Index", "Home", new { area = "" }, new { @class = "siteLogo bacicCoThem" })</p>
+            <br />
+            <p class="headSlogan">company motlio</p>
+        </div>
+        <div class="col-lg-2">
+            <div class="headAdding">
+                <span id="glyphiconPlus" class="glyphicon glyphicon-plus bacicCoThem" aria-hidden="true"></span> @Html.ActionLink("Add restaurant", "Index", "Restaurants", new { area = "" }, new { @class = "head_a" })
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="headFindMap">
+                <i id="faMapMarker" class="fa fa-map-marker bacicCoThem" aria-hidden="true"></i> @Html.ActionLink("Find a restaurant", "Index", "Home", new { area = "" }, new { @class = "head_a" })
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div id="menuClik" class="kursor menuMargin"><i class="fa fa-align-justify" aria-hidden="true"></i> Menu</div>
+        </div>
+        <div class="col-lg-1"></div>
+        <!--</div>-->
+    </div>
+    <div id="parentDark" class="disp-none">
+        <div class="menu dark pull-right menu-position">
+            <div id="menuOfClik" class="zakrytyMenu kursor">X</div>
+            <ul class="nav ulPosition"><!-- navbar-nav -->
+                <li id="menuOfClik1">@Html.Partial("_LoginPartial", new { @class = "homePpageTextStyle" })</li>
+                <li id="menuOfClik2">@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "homePpageTextStyle text-right" })</li>
+                <li id="menuOfClik3">@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "homePpageTextStyle text-right" })</li>
+                <li id="menuOfClik4">@Html.ActionLink("Contacts", "Contact", "Home", new { area = "" }, new { @class = "homePpageTextStyle text-right" })</li>
+                <li id="menuOfClik5">@Html.ActionLink("Privacy", "Privacy", "Home", new { area = "" }, new { @class = "homePpageTextStyle text-right" })</li>
+                <li id="menuOfClik6">@Html.ActionLink("Licenses", "Licenses", "Home", new { area = "" }, new { @class = "homePpageTextStyle text-right" })</li>
+                <li id="menuOfClik7">@Html.ActionLink("FAQ", "Faq", "Home", new { area = "" }, new { @class = "homePpageTextStyle text-right" })</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container body-content padd-marg">
+        @RenderBody()
+        <ht />
+    </div>
+    <footer>
+        <div class="row">
+            <p class="center-block text-center">&copy; SiteLogo.com @DateTime.Now.Year</p> <br />
+            <div class="footerMargin text-center">
+                <p class="footerMenu FoatL">@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "homePpageTextStyle" })</p>
+                <p class="footerMenuKrapka FoatL">.</p>
+                <p class="footerMenu FoatL">@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "homePpageTextStyle" })</p>
+                <p class="footerMenuKrapka FoatL">.</p>
+                <p class="footerMenu FoatL">@Html.ActionLink("Privacy", "Privacy", "Home", new { area = "" }, new { @class = "homePpageTextStyle" })</p>
+                <p class="footerMenuKrapka FoatL">.</p>
+                <p class="footerMenu FoatL">@Html.ActionLink("Licenses", "Licenses", "Home", new { area = "" }, new { @class = "homePpageTextStyle" })</p>
+                <p class="footerMenuKrapka FoatL">.</p>
+                <p class="footerMenu FoatL">@Html.ActionLink("FAQ", "Faq", "Home", new { area = "" }, new { @class = "homePpageTextStyle" })</p>
+            </div>
+        </div>
+    </footer>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/Scripts/SiteScripte/KontrolProject.js")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
