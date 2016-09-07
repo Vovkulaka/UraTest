@@ -3,8 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @* ТАК ПРАВИЛЬНО ПІДКЛЮЧАТИ CSS!!*@
     @Styles.Render("~/Content/RCSS.css")
     @Styles.Render("~/Content/SiteStyle.css")
+    @* ТАК НЕПРАВИЛЬНО ПІДКЛЮЧАТИ CSS!!
+    <link rel="stylesheet" type="text/css" href="Content/Reset_CSS.css">
+    <link rel="stylesheet" type="text/css" href="Content/SiteStyle.css"> *@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Scripts.Render("~/bundles/modernizr")
@@ -14,6 +18,8 @@
 </head>
 <body>
     <div class="row headerStyle"> 
+        <!-- navbar-fixed-top navbar navbar-inverse -->
+        <!-- <div class="container headHeight"> -->
         <div class="col-lg-1"></div>    
         <div class="col-lg-2 them">
             <div id="redThem" class="buttonThem ThemBgRed kursor FoatL"></div>
@@ -21,12 +27,19 @@
             <div id="blueThem" class="buttonThem ThemBgBlue kursor FoatL"></div>
         </div>
         <div class="col-lg-2">
+            <!-- navbar-header
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>-->
             <p id="siteLogo" class="siteLogoPosition">@Html.ActionLink("Site Logo", "Index", "Home", new { area = "" }, new { @class = "siteLogo bacicCoThem" })</p>
             <br />
             <p class="headSlogan">company motlio</p>
         </div>
         <div class="col-lg-2">
             <div class="headAdding">
+                <!-- у наступному рядку посиланню "Add restaurant" id можна додати наступним чином: new { id = "glyphiconPlus", class = "head_a" }  -->
                 <span id="glyphiconPlus" class="glyphicon glyphicon-plus bacicCoThem" aria-hidden="true"></span> @Html.ActionLink("Add restaurant", "Index", "Restaurants", new { area = "" }, new { @class = "head_a" })
             </div>
         </div>
@@ -78,6 +91,7 @@
 
 
     @Scripts.Render("~/bundles/jquery")
+    @*Scripts.Render("~/Scripts/jquery-{version}.js") //підключаємо файли jquery останньої версії *@
     @Scripts.Render("~/Scripts/SiteScripte/KontrolProject.js")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

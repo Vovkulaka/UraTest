@@ -18,7 +18,7 @@
     width: 270px;
     margin: 0px auto;
 }
-
+/************************** Them **************************/
 .buttonThem {
     height: 26px;
     width: 26px;
@@ -49,7 +49,7 @@
 .ThemCoBlue {
     color: blue !important;
 }
-
+/************************** Header **************************/
 .headerStyle {
     height: 90px;
 }
@@ -83,8 +83,8 @@
 .glyphicon-plus {
     font-size: 12px;
 }
-
-#parentDark { 
+/************************** Menu **************************/
+#parentDark { /* затемнює body, а #dark відображає освітлене вікно на передньому плані. Див. файл "вікно на затемненому фоні" */
 	background: rgba(0,0,0,0.25);
 	height: 100%;
 	position: fixed;
@@ -95,8 +95,9 @@
 }
 .menu-position {
 	background-color: rgba(255,255,255,1);
-    height: 100vh; 
+    height: 100vh; /*ПРОСТИЙ СПОСІБ ЗРОБИТИ БЛОК НА ВСЮ ВИСОТУ!!! ЯКЩО НА ВСЮ ШИРИНУ: height: 100vw;*/
     width: 300px;
+    /* подальший код відображає освітлене вікно на передньому плані, а #parentDark затемнює body. Див. файл "вікно на затемненому фоні" */
     position: fixed;
 	top: 0px;
 	right: 0%;
@@ -117,14 +118,14 @@
 .menuMargin {
     margin-top: 40px;
 }
-
+/************************** Home **************************/
 .padd-marg {
     padding: 0px !important;
     margin: 0px !important;
 }
 .homeFon {
     height: 300px;
-    width: 100vw; 
+    width: 100vw; /*ПРОСТИЙ СПОСІБ ЗРОБИТИ БЛОК НА ВСЮ ШИРИНУ!!! ЯКЩО НА ВСЮ ВИСОТУ: height: 100vh;*/
     margin-top: 20px;
 }
 .dbPosition {
@@ -138,7 +139,7 @@
 .tablycja {
     background-color: white;
 }
-
+/************************** Index **************************/
 .textDownload-1 {
     margin-top: 0px  !important;
 }
@@ -157,9 +158,10 @@
 }
 .poshuk {}
 .tablycja{}
-
+/************************** Footer **************************/
 .footerMenuKrapka {
     margin-top: -25px; 
     color: #B5B5B5;
     font-size: 35px;
 }
+/************************** ----- **************************/

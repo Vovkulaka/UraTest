@@ -46,7 +46,7 @@ namespace KontrolProject.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        // цей елемент [ValidateAntiForgeryToken] - застарілий!!! Ніде він не мішає, та у методі дії Createне дає створювати нову елементи БД
         public async Task<ActionResult> Create([Bind(Include = "Id,Logo,Name,Kitchen,Rating")] Restaurant restaurant)
         {
             if (ModelState.IsValid)
@@ -78,7 +78,7 @@ namespace KontrolProject.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        // цей елемент [ValidateAntiForgeryToken] - застарілий!!! Ніде він не мішає, та у методі дії Createне дає створювати нову елементи БД
         public async Task<ActionResult> Edit([Bind(Include = "Id,Logo,Name,Kitchen,Rating")] Restaurant restaurant)
         {
             if (ModelState.IsValid)
@@ -107,7 +107,7 @@ namespace KontrolProject.Controllers
 
         // POST: Restaurants/Delete/5
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+        // цей елемент [ValidateAntiForgeryToken] - застарілий!!! Ніде він не мішає, та у методі дії Createне дає створювати нову елементи БД
         public async Task<ActionResult> DeleteConfirmed(int id)
         {
             Restaurant restaurant = await db.Restaurants.FindAsync(id);
